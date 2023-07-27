@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>THE New counter</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        font-family: "Oswald", sans-serif;
+        background-image: url(./photo-1431440869543-efaf3388c585.avif);
+        background-size: cover;
+      }
+      .container {
+        display: grid;
+        place-items: center;
+        height: 100vh;
+        border: 5px solid green;
+      }
+      .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 2px solid rgb(154, 143, 143);
+        border-radius: 40px;
+        background-image: url(./marvel-menu-pattern_2x.png);
+        color: rgb(188, 195, 201);
+        height: 60vh;
+        width: 60vh;
+      }
+      h1 {
+        text-align: center;
+        letter-spacing: 0.1em;
+        word-wrap: break-word;
+        line-height: normal;
+        margin-top: 10%;
+        font-family: "Times New Roman", Times, serif;
+      }
+
+      .innerbox {
+        display: flex;
+        flex-direction: row;
+        padding: 30px;
+        font-size: 46px;
+        font-weight: 900;
+        gap: 30px;
+        margin: 2vh;
+      }
+      .reset {
+        margin-bottom: 20px;
+      }
+      #add {
+        cursor: pointer;
+        box-shadow: inset 0px 0px 7px rgb(0, 0, 0);
+        padding: 20px;
+      }
+      #add:hover {
+        transform: scale(1.2);
+        transition: 0.8s ease all;
+      }
+      #substract {
+        cursor: pointer;
+        box-shadow: inset 0px 0px 7px rgb(0, 0, 0);
+        padding: 20px;
+      }
+      #substract:hover {
+        transform: scale(1.2);
+        transition: 0.8s ease all;
+      }
+      #reset {
+        font-size: 32px;
+        font-style: oblique;
+        font-weight: bolder;
+        padding: 10px;
+        background-color: #429069;
+        border-radius: 20px 40px;
+      }
+      #reset:hover {
+        transform: scale(1.2);
+        transition: 0.8s ease all;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="container">
+        <div class="card">
+          <h1>Counter App</h1>
+          <div class="innerbox">
+            <button id="add">Add +1</button>
+            <div id="count"><h1>0</h1></div>
+            <button id="substract">Substract -1</button>
+          </div>
+          <div class="reset">
+            <button id="reset">Reset</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      // Get HTML elements by their IDs
+      const countEl = document.getElementById("count");
+      const add = document.getElementById("add");
+      const subsract = document.getElementById("substract");
+      const reset = document.getElementById("reset");
+
+      let count = 0;
+
+      // Add event listeners to the buttons
+      add.addEventListener("click", () => {
+        count++;
+        countEl.innerText = count;
+      });
+
+      substract.addEventListener("click", () => {
+        count--;
+        countEl.innerText = count;
+      });
+
+      reset.addEventListener("click", () => {
+        count = 0;
+        countEl.innerText = count;
+      });
+    </script>
+  </body>
+</html>

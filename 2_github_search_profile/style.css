@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(./wp3082312.png);
+  font-family: "Ysabeau SC", sans-serif;
+}
+
+.apply_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  padding: 30px;
+  margin: auto;
+  margin-top: 50px;
+  background-image: url(./photo-1584384689201-e0bcbe2c7f1d.avif);
+  border-radius: 9px;
+  box-shadow: 4px 3px 6px rgba(16, 16, 16, 0.8);
+}
+h1 {
+  text-align: center;
+  color: #420808;
+  letter-spacing: 0.5rem;
+}
+#search-btn {
+  background: rgb(42, 137, 90);
+  color: aliceblue;
+  padding: 4px 8px;
+  border: none;
+}
+button:hover {
+  transition: 0.2s ease-in-out;
+  transform: scale(1.16);
+}
+#searchbox_btn {
+  padding: 8px 50px;
+}
+
+#searchbox_btn:focus-visible {
+  padding: 9px 50px;
+  outline: 2px solid #a7f934;
+}

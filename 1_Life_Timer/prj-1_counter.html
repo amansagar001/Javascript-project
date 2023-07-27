@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>countdown</title>
+    <link rel="stylesheet" href="./style1.css" />
+    <script
+      src="https://kit.fontawesome.com/ddadb0c8d6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="background">
+      <div id="initialText" class="container">
+        <h1>Kindly Enter Your Date Of Birth</h1>
+      </div>
+      <div id="afterDOBenter" class="container">
+        <div class="center">
+          <h1>How much life journey covered,Till now</h1>
+          <div class="time-container">
+            <h2>
+              <div id="year">0</div>
+              year
+            </h2>
+            <h2>
+              <div id="month">0</div>
+              month
+            </h2>
+            <h2>
+              <div id="day">0</div>
+              day
+            </h2>
+            <h2>
+              <div id="hour">0</div>
+              hour
+            </h2>
+            <h2>
+              <div id="minute">0</div>
+              minute
+            </h2>
+            <h2>
+              <div id="second">0</div>
+              second
+            </h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="settings">
+        <i id="settingicon" class="fa-solid fa-gear" title="press-button"></i>
+        <div id="settingcontent" class="setting-content hide">
+          <input type="date" id="dobinput" />
+          <button id="dobbutton">Add DOB</button>
+        </div>
+      </div>
+    </div>
+    <script src="script1.js"></script>
+  </body>
+</html>

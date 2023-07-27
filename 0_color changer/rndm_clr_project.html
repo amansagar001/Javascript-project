@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      button {
+        padding: 26px;
+        font-size: 20px;
+        border-radius: 25px;
+        background-color: #6e6b6b;
+      }
+    </style>
+    <title>dom_project_random color</title>
+    <!-- <link rel="stylesheet" href="./dom_project.css" /> -->
+  </head>
+  <body>
+    <button id="button">Press me to change colour</button>
+    <!-- <script src="./dom_project.js"></script> -->
+
+    <script>
+      const btn = document.getElementById("button");
+      const randomcolor = () => {
+        //arrow fuction
+        let val = "1234567890ABCDEF";
+        let cons = "#";
+        for (let i = 0; i < 6; i++) {
+          cons = cons + val[Math.floor(Math.random() * 16)]; //math.floor for approx value (whole no.)
+        } //math .random gives value randomly from 0 to 0.99
+        return cons;
+      };
+      function changerandomcolor() {
+        document.body.style.background = randomcolor();
+      }
+      btn.addEventListener("click", changerandomcolor);
+    </script>
+  </body>
+</html>

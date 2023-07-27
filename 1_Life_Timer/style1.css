@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Oswald", sans-serif;
+}
+
+.background {
+  background-image: url(./1316507.jpeg);
+  height: 100vh;
+  width: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.container {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+.container h1 {
+  font-size: 3rem;
+  color: #a4a4c8;
+  font-weight: 600;
+}
+.container h2 {
+  font-size: 2rem;
+  color: #639bb7;
+  font-weight: 600;
+}
+.settings {
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  bottom: 45px;
+  right: 45vw;
+}
+.settings .fa-solid {
+  font-size: 3rem;
+  color: #c9dae8;
+}
+.setting-content {
+  display: flex;
+  gap: 1rem;
+}
+.setting-content input {
+  padding: 10px;
+  font-size: 18px;
+}
+.settings button {
+  padding: 10px;
+  background-color: #329e3d;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: rgb(254, 254, 254);
+}
+.settings:hover {
+  transform: scale(1.5);
+}
+.hide {
+  display: none;
+}
+.time-container {
+  margin-top: 1rem;
+  display: flex;
+  gap: 2.5rem;
+  justify-content: center;
+  align-items: center;
+}
+.time-container h2 {
+  line-height: 50px;
+  text-align: center;
+  font-size: 3rem;
+}
+.time-container div {
+  font-size: 4rem;
+  color: beige;
+}
