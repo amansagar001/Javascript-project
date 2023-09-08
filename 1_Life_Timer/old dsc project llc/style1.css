@@ -13,7 +13,6 @@ body {
 .background {
   background-image: url(./1316507.jpeg);
   height: 100vh;
-  width: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -80,4 +79,8 @@ body {
 .time-container div {
   font-size: 4rem;
   color: beige;
+}
+p {
+  font-size: 44px;
+  color: #a4a4c8;
 }

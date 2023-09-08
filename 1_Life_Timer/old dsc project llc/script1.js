@@ -14,7 +14,7 @@ const hourEl = document.getElementById("hour");
 const minuteEl = document.getElementById("minute");
 const secondEl = document.getElementById("second");
  
- 
+  
 const maketwodigitnumber = (number)=>{
    return number>9? number:`0${number}`;
 };
@@ -35,8 +35,8 @@ const updateAge = () =>{
    const currentdate = new Date;
 
    const dateDiff = currentdate-dateofBirth;
-   const year = Math.floor(dateDiff/(1000*60*60*24*365));
-   const month = Math.floor(dateDiff/(1000*60*60*24*365))%12;
+   const year = Math.floor(dateDiff/(1000*60*60*24*365.25));
+   const month = Math.floor(dateDiff/(1000*60*60*24*365.25))%12;
    const day = Math.floor(dateDiff/(1000*60*60*24))%30;// date is one month less.
    const hour = Math.floor(dateDiff/(1000*60*60))%24;
    const minute = Math.floor(dateDiff/(1000*60))%60;
